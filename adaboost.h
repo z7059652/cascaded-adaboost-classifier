@@ -26,7 +26,7 @@ void GetWeakClassifierPool(vector<WEAKCLASSIFIER> &wc_pool, CvMat *features_matr
 
 // clear the pool of weak classifiers
 void ClearWCpool(vector<WEAKCLASSIFIER> &wc_pool);
-
+ 
 // train one adaboost classifier, composed of a set of weak classifiers
 void AdaBoost_train(vector<WEAKCLASSIFIER> &sc, CvMat *features_matrix, vector<int> &vecLabel, vector<WEAKCLASSIFIER> &wc_pool);
 void TrainClassifier(vector<WEAKCLASSIFIER> &sc, CvMat *features_matrix, CvMat *label);
